@@ -1,6 +1,6 @@
 # Validation record — 2026-09-12
 
-Scope: local exploratory 0.1.0a1. Remote execution, public release, independent scientific review and comparative user trials are not established by these checks.
+Scope: [published exploratory 0.1.0a1](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1). Local validation, actual remote CI, publication and downloaded-package installation have completed. Independent scientific review and comparative user trials remain pending.
 
 ## Executed checks
 
@@ -41,6 +41,16 @@ uv run --no-editable python scripts/package_smoke.py --dist dist --out /tmp/path
 
 Use a new output directory for each install check. Separate `UV_PROJECT_ENVIRONMENT` directories were used for Python 3.11 and 3.13. Network is only needed to fetch build/dev tools; normal CLI execution and tests use the packaged reference.
 
-Remaining: remote Linux/Windows CI, actual release/download verification, independent human review of mapping correctness/coverage, and two actual users completing the traceability workflow. No public URL or claim of external validation is fabricated.
+Remaining: independent human review of mapping correctness/coverage, two actual users completing the traceability workflow, comparative tool trials and any subsequent PyPI distribution.
+
+## Published artifact evidence
+
+- [Initial CI](https://github.com/guatou904/pathwaybridge/actions/runs/34674597850) passed all nine OS/Python jobs on commit `b72ab00d8050586c8428063d527065830318067b`. Downloaded JUnit records show 43 passed, 0 failures and 0 skipped per job, plus separate wheel/sdist installs. [Compact record](github-ci-validation.json).
+- [Tag publication workflow](https://github.com/guatou904/pathwaybridge/actions/runs/34674715592) repeated the nine-job matrix, rebuilt the final artifacts and installed both before publishing.
+- [v0.1.0a1](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1) was published at 2026-09-12 05:07:31 UTC. It is an exploratory prerelease, not the stable v0.1.0 milestone.
+- All five release assets were downloaded. The payload hashes match SHA256SUMS; package hashes match INSTALL_VALIDATION.json. Both downloaded package formats were installed and exercised outside the checkout. [Authoritative published-artifact record](github-release-validation.json).
+- `package-install-validation.json` records the earlier local candidate. Its hashes differ from the public build because repository URLs and release-facing metadata were added before the release commit. Use the GitHub record for published files.
+- UI checks used localhost. Direct file-URL navigation was not automated because the in-app browser URL policy blocks it; no bypass was attempted. CSS/JS are embedded, and normal CLI execution uses no network services.
+- Published tags and assets are preserved. Later documentation on main records validation without rewriting the release.
 
 Build compatibility: the initial Hatchling 1.32.0 build selected metadata 2.5, which the locked Twine version rejected. The final configuration explicitly emits metadata 2.4 for both wheel and sdist and pins Hatchling 1.32.0. The first artifacts are preserved in ignored local build history; they are not the validated distribution. [Hatchling change history](https://hatch.pypa.io/dev/history/hatchling/) explains the default change.

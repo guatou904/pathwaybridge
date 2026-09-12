@@ -11,8 +11,8 @@ Target: exploratory 0.1.0a1, not a validated general pathway inference system.
 - [x] Final Python support matrix and code checks recorded (3.11/3.12/3.13 locally).
 - [x] Wheel and sdist build, metadata checks and separate clean installations.
 - [x] Final browser QA and artifact contents checked; private inputs excluded.
-- [ ] Remote GitHub CI succeeds on the actual release commit.
-- [ ] GitHub release created, published downloads reinstalled and hashes checked.
+- [x] Remote GitHub CI succeeds on the actual release commit (all nine jobs).
+- [x] GitHub v0.1.0a1 prerelease created; downloaded wheel/sdist reinstalled and hashes checked.
 - [ ] PyPI project name and distribution configured, if PyPI publication is approved.
 - [ ] Independent human review of 10–20 mappings and two actual user workflows.
 - [ ] Comparative task trial against spreadsheet and pyMultiOmics baseline.

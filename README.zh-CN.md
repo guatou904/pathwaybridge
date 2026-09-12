@@ -4,7 +4,7 @@
 
 [English](README.md) · [输入格式](docs/input-contract.md) · [映射规则](docs/mapping-policy.md)
 
-当前为探索测试版 **0.1.0a1**：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。已发布制品以 [GitHub Releases](https://github.com/guatou904/pathwaybridge/releases) 为准。完整通路覆盖和独立科学评审尚未完成。
+已发布 [**0.1.0a1 探索测试版**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1)：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。GitHub 发行和下载后的安装回验已完成；完整通路覆盖、独立科学评审和 PyPI 发布尚未完成。
 
 例如，`Pgd` 在两个空间区域中一升一降，代谢物名称又无法区分异构体。PathwayBridge 会保留这些不同来源的观测，并列出候选映射，不把它们合成一个“通路激活分数”。
 
@@ -15,13 +15,11 @@
 需要 Python 3.11 或更新版本。运行时不依赖其他 Python 包，也不访问网络。
 
 ```sh
-git clone https://github.com/guatou904/pathwaybridge.git
-cd pathwaybridge
 python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install .
+python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a1/pathwaybridge-0.1.0a1-py3-none-any.whl"
 pathwaybridge demo --out demo-run
 ```
 
@@ -70,6 +68,6 @@ pathwaybridge build --manifest my-inputs/manifest.json --out my-report
 
 本地功能、测试、合成演示和真实输入格式回验见[验证记录](docs/validation-record.md)。真实研究数据只在本地忽略目录使用，不随软件包分发。真实输入跑通不等于研究结论已通过科学评审。
 
-GitHub Actions 配置和发布流程已准备；没有远程成功记录之前，不将其标为 CI 已通过或正式发布。[发布清单](RELEASE_CHECKLIST.md)。
+[远程 CI](https://github.com/guatou904/pathwaybridge/actions/runs/34674597850) 和[发布流程](https://github.com/guatou904/pathwaybridge/actions/runs/34674715592) 均已实际成功：Linux/macOS/Windows × Python 3.11/3.12/3.13，每组 43 项测试通过，并完成 wheel/sdist 安装检查。[发布清单](RELEASE_CHECKLIST.md)。
 
 代码采用 [MIT](LICENSE)。参考注释来自 UniProt Consortium `2026_03`，沿用 CC BY 4.0，包含其 Rhea/ChEBI 交叉引用；筛选、角色标签和候选别名属于本项目适配。[数据来源与授权](docs/data-sources.md)。

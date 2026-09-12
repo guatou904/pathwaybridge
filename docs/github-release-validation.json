@@ -1,0 +1,70 @@
+{
+  "tag": "v0.1.0a1",
+  "commit": "b72ab00d8050586c8428063d527065830318067b",
+  "release_url": "https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1",
+  "release_workflow_url": "https://github.com/guatou904/pathwaybridge/actions/runs/34674715592",
+  "published_at_utc": "2026-09-12T05:07:31Z",
+  "prerelease": true,
+  "post_publication_installation": [
+    {
+      "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+      "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+      "status": "passed",
+      "python": "3.12.14",
+      "records": 20,
+      "checks": [
+        "fresh environment",
+        "pip check",
+        "CLI version",
+        "demo",
+        "validate",
+        "build",
+        "output hashes"
+      ]
+    },
+    {
+      "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+      "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+      "status": "passed",
+      "python": "3.12.14",
+      "records": 20,
+      "checks": [
+        "fresh environment",
+        "pip check",
+        "CLI version",
+        "demo",
+        "validate",
+        "build",
+        "output hashes"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "INSTALL_VALIDATION.json",
+      "sha256": "867aa2a76c4948da23c49722ccf12330565fd321770a387a68b06ed926df9383",
+      "bytes": 741
+    },
+    {
+      "name": "SHA256SUMS",
+      "sha256": "9823db2b79a2425a64efc8a26ab5fec02c529b19a2541dcdc12899244e0742db",
+      "bytes": 366
+    },
+    {
+      "name": "demo.html",
+      "sha256": "309b817b738b8b5c3a25eab03e20e5050270988382bb32805a58c19a0ed0f727",
+      "bytes": 62025
+    },
+    {
+      "name": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+      "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+      "bytes": 24299
+    },
+    {
+      "name": "pathwaybridge-0.1.0a1.tar.gz",
+      "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+      "bytes": 203773
+    }
+  ],
+  "pypi_status": "not published"
+}

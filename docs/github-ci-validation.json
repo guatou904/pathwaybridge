@@ -1,0 +1,367 @@
+{
+  "run_url": "https://github.com/guatou904/pathwaybridge/actions/runs/34674597850",
+  "commit": "b72ab00d8050586c8428063d527065830318067b",
+  "status": "success",
+  "jobs": [
+    {
+      "name": "validation-macos-latest-3.11",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.11.9",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.11.9",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-macos-latest-3.12",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.12.10",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.12.10",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-macos-latest-3.13",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-ubuntu-latest-3.11",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.11.16",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.11.16",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-ubuntu-latest-3.12",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.12.3",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.12.3",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-ubuntu-latest-3.13",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7e471291ebc2046df50f733f5ab1b56fa0b22db440bb8c777767012675b80e56",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-windows-latest-3.11",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7563c7495a40e121b1e06adb2f187c4fae640ef0c5d31c467232cf5136b69d9d",
+          "status": "passed",
+          "python": "3.11.9",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.11.9",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-windows-latest-3.12",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7563c7495a40e121b1e06adb2f187c4fae640ef0c5d31c467232cf5136b69d9d",
+          "status": "passed",
+          "python": "3.12.10",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.12.10",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "validation-windows-latest-3.13",
+      "tests": 43,
+      "failures": 0,
+      "skipped": 0,
+      "installation": [
+        {
+          "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+          "sha256": "7563c7495a40e121b1e06adb2f187c4fae640ef0c5d31c467232cf5136b69d9d",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        },
+        {
+          "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+          "sha256": "b9183a7893c9052ba2a91b523094d5fcb2a5dc94e2a2bcc91ef08c68d7bb2fa1",
+          "status": "passed",
+          "python": "3.13.15",
+          "records": 20,
+          "checks": [
+            "fresh environment",
+            "pip check",
+            "CLI version",
+            "demo",
+            "validate",
+            "build",
+            "output hashes"
+          ]
+        }
+      ]
+    }
+  ]
+}
