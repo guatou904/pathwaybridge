@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the software version and the source databases described in docs/data-sources.md."
+title: "PathwayBridge: context-preserving multi-omics reaction evidence"
+type: software
+authors:
+  - name: "PathwayBridge contributors"
+version: 0.1.0a1
+license: MIT
+abstract: "Offline, row-traceable evidence mapping for a bounded mouse pentose phosphate pathway reference."
+repository-code: "https://github.com/guatou904/pathwaybridge"

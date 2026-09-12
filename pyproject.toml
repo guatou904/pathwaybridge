@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling==1.32.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pathwaybridge"
+version = "0.1.0a1"
+description = "Traceable, context-preserving multi-omics evidence for the pentose phosphate pathway"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "PathwayBridge contributors"}]
+classifiers = ["Development Status :: 3 - Alpha", "Topic :: Scientific/Engineering :: Bio-Informatics", "Programming Language :: Python :: 3"]
+
+[project.urls]
+Repository = "https://github.com/guatou904/pathwaybridge"
+Issues = "https://github.com/guatou904/pathwaybridge/issues"
+
+[project.scripts]
+pathwaybridge = "pathwaybridge.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1", "build>=1.2,<2", "twine>=6,<7"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pathwaybridge"]
+core-metadata-version = "2.4"
+
+[tool.hatch.build.targets.sdist]
+core-metadata-version = "2.4"
+exclude = ["/docs/package-install-validation.json"]
+include = ["/src", "/tests", "/scripts", "/docs", "/*.md", "/LICENSE", "/CITATION.cff", "/pyproject.toml", "/uv.lock", "/.github"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

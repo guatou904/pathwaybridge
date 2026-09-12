@@ -1,0 +1,13 @@
+entity_id,namespace,species,contrast,effect_type,value,unit,cell_type,region,timepoint,assay,compartment,p_value,p_adjusted,p_adjust_method,review_status,note
+G6pdx,gene_symbol,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Pgls,gene_symbol,10090,treated vs control,log2_fold_change,-0.75,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Pgd,gene_symbol,10090,treated vs control,log2_fold_change,1.70,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Rpia,gene_symbol,10090,treated vs control,log2_fold_change,-0.55,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Rpe,gene_symbol,10090,treated vs control,log2_fold_change,0,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Tkt,gene_symbol,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Taldo1,gene_symbol,10090,treated vs control,log2_fold_change,0.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+G6pd,gene_alias,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+Tkt,gene_alias,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+UnlistedGene,gene_symbol,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+G6PD,gene_symbol,9606,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+ENSMUSG00000000001,ensembl,10090,treated vs control,log2_fold_change,1.25,log2 ratio,hepatocyte,unknown,D3,synthetic RNA,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.

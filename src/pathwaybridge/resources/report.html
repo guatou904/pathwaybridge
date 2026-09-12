@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'sha256-{script_hash}'; base-uri 'none'; form-action 'none'">
+<title>{title} · PathwayBridge</title><style>{css}</style></head>
+<body><header><a class="brand" href="#top">P<span>→</span>B &nbsp; PathwayBridge</a>
+<span class="edition">LOCAL EVIDENCE REPORT · {software_version}</span></header>
+<main id="top"><p class="eyebrow">PENTOSE PHOSPHATE PATHWAY / MUS MUSCULUS</p>
+<h1>{title}</h1><p class="lead">Follow every observation back to its source.</p>
+<div class="notice"><strong>Read the evidence, preserve the context.</strong> Expression and metabolite abundance do not establish reaction activity or metabolic flux. Opposite signs in different cells or experiments are retained, not pooled.</div>
+<section class="metrics" aria-label="Input summary">
+<div><b>{records}</b><span>input records</span></div><div><b>{source_count}</b><span>source tables</span></div>
+<div><b>{pending}</b><span>mapping review required</span></div><div><b>{issue_count}</b><span>review flags</span></div></section>
+<nav><a href="#pathway">01 Reaction map</a><a href="#evidence">02 Evidence ledger</a><a href="#provenance">03 Provenance</a></nav>
+<section id="pathway"><div class="section-heading"><h2>01 / Reaction map</h2><span>7 selected reference reactions</span></div>
+<p>Counts include all candidate links and source review states. One record can map to several reactions; counts are not independent replicates. This is a bounded PPP subset; the second transketolase reaction and other isoenzymes are not included.</p>
+<div class="map">{svg}</div><div class="reaction-list">{reactions}</div></section>
+<section id="evidence"><div class="section-heading"><h2>02 / Evidence ledger</h2><span id="count">{records} records</span></div>
+<p>Higher/lower refers only to the supplied effect and contrast. P values remain as supplied; no cross-omics significance or combined activity score is calculated.</p>
+<div class="filters"><label>Search<input id="search" type="search" placeholder="Gene, source, cell type or region…"></label>
+<label>Modality<select id="modality"><option value="">All modalities</option>{modality_options}</select></label>
+<label>Mapping<select id="status"><option value="">All mapping states</option>{status_options}</select></label><button id="reset" type="button">Reset</button></div>
+<div class="table-scroll"><table><thead><tr><th>Entity</th><th>Biological context</th><th>Observed effect</th><th>Statistics</th><th>Mapping / review</th><th>Original source</th></tr></thead>
+<tbody id="ledger">{rows}</tbody></table></div><p id="empty" hidden>No records match these filters.</p></section>
+<section id="provenance"><h2>03 / Provenance & exports</h2><div class="downloads"><a href="evidence.json">Complete JSON</a><a href="evidence.tsv">Evidence TSV</a><a href="reaction_evidence.tsv">Reaction TSV</a><a href="issues.tsv">Review flags</a><a href="mapping.json">Mapping snapshot</a></div>
+<p>Mapping: <code>{mapping_version}</code><small>SHA256: {mapping_sha256}</small></p>
+<ul class="sources">{sources}</ul><p class="fine">Reference annotations adapted from UniProt (CC BY 4.0), with Rhea and ChEBI identifiers. Mapping review is pending independent scientific review. No endorsement by the source databases is implied. JSON preserves original source strings. TSV protects formula-like text with a leading apostrophe.</p>
+<p class="fine">Review the exported report before sharing: it contains your input records and context.</p></section>
+</main><footer>PathwayBridge · Evidence stays inspectable. <a href="https://www.uniprot.org/help/license">Data attribution</a></footer><script>{js}</script></body></html>

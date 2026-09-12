@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-12",
+  "records": 490,
+  "sources": 2,
+  "checks": [
+    "all raw fields identical",
+    "all normalized mapped values identical",
+    "source hashes match",
+    "source record indexes match"
+  ],
+  "summary": {
+    "records": 490,
+    "sources": 2,
+    "mapping_status": {
+      "unmapped": 168,
+      "matched": 304,
+      "alias": 18
+    },
+    "modalities": {
+      "single_cell": 460,
+      "metabolomics": 30
+    },
+    "issue_count": 1196
+  },
+  "scope": "Local private data checked. No raw values, names of input files or absolute paths are included in this shareable record."
+}

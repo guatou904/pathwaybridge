@@ -1,0 +1,34 @@
+[
+  {
+    "artifact": "pathwaybridge-0.1.0a1-py3-none-any.whl",
+    "sha256": "5fda8c56ae6cb865ef932868b033a8042e4a54aaefd7e13905aa476fc7288523",
+    "status": "passed",
+    "python": "3.12.14",
+    "records": 20,
+    "checks": [
+      "fresh environment",
+      "pip check",
+      "CLI version",
+      "demo",
+      "validate",
+      "build",
+      "output hashes"
+    ]
+  },
+  {
+    "artifact": "pathwaybridge-0.1.0a1.tar.gz",
+    "sha256": "e0784ac1f8c0b413ae97718730fe53124f9e834d505772e8aaebb5719dc21329",
+    "status": "passed",
+    "python": "3.12.14",
+    "records": 20,
+    "checks": [
+      "fresh environment",
+      "pip check",
+      "CLI version",
+      "demo",
+      "validate",
+      "build",
+      "output hashes"
+    ]
+  }
+]

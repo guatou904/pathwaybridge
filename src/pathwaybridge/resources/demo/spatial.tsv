@@ -1,0 +1,3 @@
+entity_id	namespace	species	contrast	effect_type	value	unit	cell_type	region	timepoint	assay	compartment	p_value	p_adjusted	p_adjust_method	review_status	note
+Pgd	gene_symbol	10090	treated vs control	log2_fold_change	-1.30	log2 ratio	hepatocyte	periportal	D3	synthetic spatial	unknown	0.012	0.08	BH	pending	Synthetic observation; not a study result.
+Pgd	gene_symbol	10090	treated vs control	log2_fold_change	1.90	log2 ratio	hepatocyte	pericentral	D3	synthetic spatial	unknown	0.012	0.08	BH	pending	Synthetic observation; not a study result.

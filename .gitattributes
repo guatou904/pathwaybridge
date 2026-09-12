@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve the exact CSV/TSV fixture bytes used for provenance checks.
+*.csv -text whitespace=cr-at-eol
+*.tsv -text whitespace=cr-at-eol
+*.png binary

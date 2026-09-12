@@ -1,0 +1,6 @@
+entity_id,namespace,species,contrast,effect_type,value,unit,cell_type,region,timepoint,assay,compartment,p_value,p_adjusted,p_adjust_method,review_status,note
+CHEBI:58759,chebi,10090,treated vs control,log2_fold_change,-0.8,log2 ratio,whole_tissue,unknown,D3,synthetic LC-MS,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+NADP(H),compound_name,10090,treated vs control,log2_fold_change,1.1,log2 ratio,whole_tissue,unknown,D3,unresolved redox feature,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+pentose phosphate,compound_name,10090,treated vs control,log2_fold_change,0.5,log2 ratio,whole_tissue,unknown,D3,isomer-unresolved feature,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+G6P,compound_name,10090,treated vs control,log2_fold_change,0.2,log2 ratio,whole_tissue,unknown,D3,synthetic LC-MS,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.
+unknown_peak,compound_name,10090,treated vs control,log2_fold_change,4.5,log2 ratio,unknown,unknown,D3,unknown,unknown,0.012,0.08,BH,pending,Synthetic observation; not a study result.

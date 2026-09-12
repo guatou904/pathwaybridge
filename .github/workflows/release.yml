@@ -1,0 +1,39 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+  release:
+    needs: ci
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e
+        with:
+          version: '0.12.5'
+      - run: uv sync --locked --no-editable --python 3.12
+      - name: Match tag to package version
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: uv run --no-editable python -c 'import os,pathwaybridge; assert os.environ["RELEASE_TAG"] == "v" + pathwaybridge.__version__'
+      - run: uv run --no-editable python -m build
+      - run: uv run --no-editable twine check dist/*.whl dist/*.tar.gz
+      - run: uv run --no-editable python scripts/package_smoke.py --dist dist --out "$RUNNER_TEMP/pathwaybridge-release-smoke"
+      - run: uv run --no-editable pathwaybridge demo --out artifacts/demo
+      - name: Assemble release evidence
+        run: |
+          cp "$RUNNER_TEMP/pathwaybridge-release-smoke/results.json" dist/INSTALL_VALIDATION.json
+          cp artifacts/demo/report/report.html dist/demo.html
+          cd dist
+          sha256sum *.whl *.tar.gz INSTALL_VALIDATION.json demo.html > SHA256SUMS
+      - name: Publish exploratory prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" dist/* --verify-tag --prerelease --title "PathwayBridge $RELEASE_TAG" --notes-file docs/release-notes.md

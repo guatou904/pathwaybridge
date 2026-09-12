@@ -1,0 +1,2 @@
+entity_id,namespace,species,contrast,effect_type,value,unit,cell_type,region,timepoint,assay,compartment,p_value,p_adjusted,p_adjust_method,review_status,note
+G6pdx,gene_symbol,10090,treated vs control,log2_fold_change,0.000000000000012300,log2 ratio,whole_tissue,unknown,D3,synthetic bulk,unknown,1e-300,2e-299,BH,pending,Synthetic observation; not a study result.

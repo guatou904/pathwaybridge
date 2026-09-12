@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "title": "One pathway. Every context.",
+  "sources": [
+    {
+      "source_id": "rna",
+      "experiment_id": "synthetic-single_cell",
+      "modality": "single_cell",
+      "file": "rna.csv",
+      "columns": {
+        "entity_id": "entity_id",
+        "namespace": "namespace",
+        "species": "species",
+        "contrast": "contrast",
+        "effect_type": "effect_type",
+        "value": "value",
+        "unit": "unit",
+        "cell_type": "cell_type",
+        "region": "region",
+        "timepoint": "timepoint",
+        "assay": "assay",
+        "compartment": "compartment",
+        "p_value": "p_value",
+        "p_adjusted": "p_adjusted",
+        "p_adjust_method": "p_adjust_method",
+        "review_status": "review_status",
+        "note": "note"
+      }
+    },
+    {
+      "source_id": "spatial",
+      "experiment_id": "synthetic-spatial",
+      "modality": "spatial",
+      "file": "spatial.tsv",
+      "columns": {
+        "entity_id": "entity_id",
+        "namespace": "namespace",
+        "species": "species",
+        "contrast": "contrast",
+        "effect_type": "effect_type",
+        "value": "value",
+        "unit": "unit",
+        "cell_type": "cell_type",
+        "region": "region",
+        "timepoint": "timepoint",
+        "assay": "assay",
+        "compartment": "compartment",
+        "p_value": "p_value",
+        "p_adjusted": "p_adjusted",
+        "p_adjust_method": "p_adjust_method",
+        "review_status": "review_status",
+        "note": "note"
+      }
+    },
+    {
+      "source_id": "bulk",
+      "experiment_id": "synthetic-bulk_rna",
+      "modality": "bulk_rna",
+      "file": "bulk.csv",
+      "columns": {
+        "entity_id": "entity_id",
+        "namespace": "namespace",
+        "species": "species",
+        "contrast": "contrast",
+        "effect_type": "effect_type",
+        "value": "value",
+        "unit": "unit",
+        "cell_type": "cell_type",
+        "region": "region",
+        "timepoint": "timepoint",
+        "assay": "assay",
+        "compartment": "compartment",
+        "p_value": "p_value",
+        "p_adjusted": "p_adjusted",
+        "p_adjust_method": "p_adjust_method",
+        "review_status": "review_status",
+        "note": "note"
+      }
+    },
+    {
+      "source_id": "metabolites",
+      "experiment_id": "synthetic-metabolomics",
+      "modality": "metabolomics",
+      "file": "metabolites.csv",
+      "columns": {
+        "entity_id": "entity_id",
+        "namespace": "namespace",
+        "species": "species",
+        "contrast": "contrast",
+        "effect_type": "effect_type",
+        "value": "value",
+        "unit": "unit",
+        "cell_type": "cell_type",
+        "region": "region",
+        "timepoint": "timepoint",
+        "assay": "assay",
+        "compartment": "compartment",
+        "p_value": "p_value",
+        "p_adjusted": "p_adjusted",
+        "p_adjust_method": "p_adjust_method",
+        "review_status": "review_status",
+        "note": "note"
+      }
+    }
+  ]
+}

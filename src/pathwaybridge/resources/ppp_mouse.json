@@ -1,0 +1,1134 @@
+{
+  "schema_version": 1,
+  "version": "mouse-ppp-2026-09-12.1",
+  "species": "10090",
+  "name": "Mouse PPP — seven selected reference reactions",
+  "license": "CC-BY-4.0",
+  "attribution": "Adapted from UniProt Consortium annotations (2026_03), including Rhea and ChEBI cross-references. Local selection, role labels and assay-name candidate aliases added by PathwayBridge contributors.",
+  "source_snapshot": "docs/reference/uniprot-2026-09-12.json",
+  "coverage": "Bounded reference, not exhaustive PPP. Second transketolase reaction, paralogues, transport and compartment-specific entities are outside this snapshot.",
+  "reactions": [
+    {
+      "id": "RHEA:15841",
+      "gene": "G6pdx",
+      "branch": "oxidative",
+      "equation": "D-glucose 6-phosphate + NADP(+) = 6-phospho-D-glucono-1,5-lactone + NADPH + H(+)",
+      "display_equation": "G6P + NADP+ → 6PGL + NADPH + H+",
+      "ec": "1.1.1.49",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "12831846"
+        }
+      ]
+    },
+    {
+      "id": "RHEA:12556",
+      "gene": "Pgls",
+      "branch": "oxidative",
+      "equation": "6-phospho-D-glucono-1,5-lactone + H2O = 6-phospho-D-gluconate + H(+)",
+      "display_equation": "6PGL + H₂O → 6PG + H+",
+      "ec": "3.1.1.31",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9CQ60/entry",
+      "source_version": "UniProt 2026_03; entry 165",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": []
+    },
+    {
+      "id": "RHEA:10116",
+      "gene": "Pgd",
+      "branch": "oxidative",
+      "equation": "6-phospho-D-gluconate + NADP(+) = D-ribulose 5-phosphate + CO2 + NADPH",
+      "display_equation": "6PG + NADP+ → Ru5P + CO₂ + NADPH",
+      "ec": "1.1.1.44",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9DCD0/entry",
+      "source_version": "UniProt 2026_03; entry 183",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P00349"
+        }
+      ]
+    },
+    {
+      "id": "RHEA:14657",
+      "gene": "Rpia",
+      "branch": "non-oxidative",
+      "equation": "aldehydo-D-ribose 5-phosphate = D-ribulose 5-phosphate",
+      "display_equation": "R5P ⇌ Ru5P",
+      "ec": "5.3.1.6",
+      "source_url": "https://www.uniprot.org/uniprotkb/P47968/entry",
+      "source_version": "UniProt 2026_03; entry 163",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "7758956"
+        }
+      ]
+    },
+    {
+      "id": "RHEA:13677",
+      "gene": "Rpe",
+      "branch": "non-oxidative",
+      "equation": "D-ribulose 5-phosphate = D-xylulose 5-phosphate",
+      "display_equation": "Ru5P ⇌ X5P",
+      "ec": "5.1.3.1",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q8VEE0/entry",
+      "source_version": "UniProt 2026_03; entry 144",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q96AT9"
+        }
+      ]
+    },
+    {
+      "id": "RHEA:10508",
+      "gene": "Tkt",
+      "branch": "non-oxidative",
+      "equation": "D-sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate = aldehydo-D-ribose 5-phosphate + D-xylulose 5-phosphate",
+      "display_equation": "S7P + G3P ⇌ R5P + X5P",
+      "ec": "2.2.1.1",
+      "source_url": "https://www.uniprot.org/uniprotkb/P40142/entry",
+      "source_version": "UniProt 2026_03; entry 193",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P29401"
+        }
+      ]
+    },
+    {
+      "id": "RHEA:17053",
+      "gene": "Taldo1",
+      "branch": "non-oxidative",
+      "equation": "D-sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate = D-erythrose 4-phosphate + beta-D-fructose 6-phosphate",
+      "display_equation": "S7P + G3P ⇌ E4P + F6P",
+      "ec": "2.2.1.2",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reference_evidence": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "17003133"
+        },
+        {
+          "evidenceCode": "ECO:0000305",
+          "source": "PubMed",
+          "id": "27703206"
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "namespace": "gene_symbol",
+      "input_id": "G6pdx",
+      "entity_id": "UniProt:Q00612",
+      "label": "G6pdx",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "Q00612",
+      "entity_id": "UniProt:Q00612",
+      "label": "G6pdx",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "G6pdx",
+      "entity_id": "UniProt:Q00612",
+      "label": "G6pdx",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "G6pd",
+      "entity_id": "UniProt:Q00612",
+      "label": "G6pdx",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "G6pd-1",
+      "entity_id": "UniProt:Q00612",
+      "label": "G6pdx",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q00612/entry",
+      "source_version": "UniProt 2026_03; entry 204",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Pgls",
+      "entity_id": "UniProt:Q9CQ60",
+      "label": "Pgls",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9CQ60/entry",
+      "source_version": "UniProt 2026_03; entry 165",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "Q9CQ60",
+      "entity_id": "UniProt:Q9CQ60",
+      "label": "Pgls",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9CQ60/entry",
+      "source_version": "UniProt 2026_03; entry 165",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Pgls",
+      "entity_id": "UniProt:Q9CQ60",
+      "label": "Pgls",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9CQ60/entry",
+      "source_version": "UniProt 2026_03; entry 165",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Pgd",
+      "entity_id": "UniProt:Q9DCD0",
+      "label": "Pgd",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9DCD0/entry",
+      "source_version": "UniProt 2026_03; entry 183",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "Q9DCD0",
+      "entity_id": "UniProt:Q9DCD0",
+      "label": "Pgd",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9DCD0/entry",
+      "source_version": "UniProt 2026_03; entry 183",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Pgd",
+      "entity_id": "UniProt:Q9DCD0",
+      "label": "Pgd",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q9DCD0/entry",
+      "source_version": "UniProt 2026_03; entry 183",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Rpia",
+      "entity_id": "UniProt:P47968",
+      "label": "Rpia",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/P47968/entry",
+      "source_version": "UniProt 2026_03; entry 163",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "P47968",
+      "entity_id": "UniProt:P47968",
+      "label": "Rpia",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/P47968/entry",
+      "source_version": "UniProt 2026_03; entry 163",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Rpia",
+      "entity_id": "UniProt:P47968",
+      "label": "Rpia",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/P47968/entry",
+      "source_version": "UniProt 2026_03; entry 163",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Rpi",
+      "entity_id": "UniProt:P47968",
+      "label": "Rpia",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/P47968/entry",
+      "source_version": "UniProt 2026_03; entry 163",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Rpe",
+      "entity_id": "UniProt:Q8VEE0",
+      "label": "Rpe",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q8VEE0/entry",
+      "source_version": "UniProt 2026_03; entry 144",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "Q8VEE0",
+      "entity_id": "UniProt:Q8VEE0",
+      "label": "Rpe",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q8VEE0/entry",
+      "source_version": "UniProt 2026_03; entry 144",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Rpe",
+      "entity_id": "UniProt:Q8VEE0",
+      "label": "Rpe",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q8VEE0/entry",
+      "source_version": "UniProt 2026_03; entry 144",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Tkt",
+      "entity_id": "UniProt:P40142",
+      "label": "Tkt",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/P40142/entry",
+      "source_version": "UniProt 2026_03; entry 193",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "P40142",
+      "entity_id": "UniProt:P40142",
+      "label": "Tkt",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/P40142/entry",
+      "source_version": "UniProt 2026_03; entry 193",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Tkt",
+      "entity_id": "UniProt:P40142",
+      "label": "Tkt",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/P40142/entry",
+      "source_version": "UniProt 2026_03; entry 193",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_symbol",
+      "input_id": "Taldo1",
+      "entity_id": "UniProt:Q93092",
+      "label": "Taldo1",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "uniprot",
+      "input_id": "Q93092",
+      "entity_id": "UniProt:Q93092",
+      "label": "Taldo1",
+      "match_type": "exact",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Taldo1",
+      "entity_id": "UniProt:Q93092",
+      "label": "Taldo1",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Tal",
+      "entity_id": "UniProt:Q93092",
+      "label": "Taldo1",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Taldo",
+      "entity_id": "UniProt:Q93092",
+      "label": "Taldo1",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q93092/entry",
+      "source_version": "UniProt 2026_03; entry 198",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "enzyme"
+        }
+      ]
+    },
+    {
+      "namespace": "gene_alias",
+      "input_id": "Tkt",
+      "entity_id": "UniProt:Q62371",
+      "label": "Ddr2 (outside this PPP reference)",
+      "match_type": "alias",
+      "source_url": "https://www.uniprot.org/uniprotkb/Q62371/entry",
+      "source_version": "UniProt 2026_03; entry 215",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": []
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:61548",
+      "entity_id": "CHEBI:61548",
+      "label": "G6P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:61548",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "G6P",
+      "entity_id": "CHEBI:61548",
+      "label": "G6P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:61548",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:58349",
+      "entity_id": "CHEBI:58349",
+      "label": "NADP+ (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58349",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "NADP+",
+      "entity_id": "CHEBI:58349",
+      "label": "NADP+ (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58349",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "NADP(H)",
+      "entity_id": "CHEBI:58349",
+      "label": "NADP+ (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58349",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:57955",
+      "entity_id": "CHEBI:57955",
+      "label": "6PGL (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57955",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "6PGL",
+      "entity_id": "CHEBI:57955",
+      "label": "6PGL (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57955",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:57783",
+      "entity_id": "CHEBI:57783",
+      "label": "NADPH (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57783",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "NADPH",
+      "entity_id": "CHEBI:57783",
+      "label": "NADPH (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57783",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "NADP(H)",
+      "entity_id": "CHEBI:57783",
+      "label": "NADPH (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57783",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:15841",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:58759",
+      "entity_id": "CHEBI:58759",
+      "label": "6PG (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58759",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "6PG",
+      "entity_id": "CHEBI:58759",
+      "label": "6PG (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58759",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:12556",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:58121",
+      "entity_id": "CHEBI:58121",
+      "label": "Ru5P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58121",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "Ru5P",
+      "entity_id": "CHEBI:58121",
+      "label": "Ru5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58121",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "pentose phosphate",
+      "entity_id": "CHEBI:58121",
+      "label": "Ru5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58121",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10116",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:58273",
+      "entity_id": "CHEBI:58273",
+      "label": "R5P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58273",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "R5P",
+      "entity_id": "CHEBI:58273",
+      "label": "R5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58273",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "pentose phosphate",
+      "entity_id": "CHEBI:58273",
+      "label": "R5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:58273",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:14657",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:57737",
+      "entity_id": "CHEBI:57737",
+      "label": "X5P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57737",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "X5P",
+      "entity_id": "CHEBI:57737",
+      "label": "X5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57737",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "pentose phosphate",
+      "entity_id": "CHEBI:57737",
+      "label": "X5P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57737",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:13677",
+          "role": "product"
+        },
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:57483",
+      "entity_id": "CHEBI:57483",
+      "label": "S7P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57483",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "S7P",
+      "entity_id": "CHEBI:57483",
+      "label": "S7P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57483",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:59776",
+      "entity_id": "CHEBI:59776",
+      "label": "G3P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:59776",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "G3P",
+      "entity_id": "CHEBI:59776",
+      "label": "G3P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:59776",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:10508",
+          "role": "substrate"
+        },
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "substrate"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:16897",
+      "entity_id": "CHEBI:16897",
+      "label": "E4P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:16897",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "E4P",
+      "entity_id": "CHEBI:16897",
+      "label": "E4P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:16897",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "chebi",
+      "input_id": "CHEBI:57634",
+      "entity_id": "CHEBI:57634",
+      "label": "F6P (reaction-specific chemical form)",
+      "match_type": "exact",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57634",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "source_checked_not_independently_reviewed",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "product"
+        }
+      ]
+    },
+    {
+      "namespace": "compound_name",
+      "input_id": "F6P",
+      "entity_id": "CHEBI:57634",
+      "label": "F6P (reaction-specific chemical form)",
+      "match_type": "alias",
+      "source_url": "https://www.ebi.ac.uk/chebi/CHEBI:57634",
+      "source_version": "UniProt 2026_03 reaction ChEBI cross-reference; local aliases 2026-09-12",
+      "review_status": "assay_identity_review_required",
+      "reactions": [
+        {
+          "reaction_id": "RHEA:17053",
+          "role": "product"
+        }
+      ]
+    }
+  ]
+}

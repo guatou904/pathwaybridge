@@ -1,0 +1,1854 @@
+{
+  "source_url": "https://rest.uniprot.org/uniprotkb/search?query=organism_id%3A10090+AND+reviewed%3Atrue+AND+%28gene_exact%3AG6pdx+OR+gene_exact%3APgls+OR+gene_exact%3APgd+OR+gene_exact%3ARpia+OR+gene_exact%3ARpe+OR+gene_exact%3ATkt+OR+gene_exact%3ATaldo1%29&format=json&size=25",
+  "retrieved_utc": "2026-09-12T04:42:06.162693+00:00",
+  "release": "2026_03",
+  "response_sha256": "490f7396001a5c0fdcc563affe3d7d40a899ed309c653abbdbe330c87591ea1b",
+  "license": "CC-BY-4.0",
+  "license_url": "https://www.uniprot.org/help/license",
+  "changes": "Selected entry fields; sequence and bibliography omitted.",
+  "entries": [
+    {
+      "primaryAccession": "Q00612",
+      "genes": [
+        {
+          "geneName": {
+            "value": "G6pdx"
+          },
+          "synonyms": [
+            {
+              "value": "G6pd"
+            },
+            {
+              "value": "G6pd-1"
+            }
+          ]
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "1993-04-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-03-20",
+        "entryVersion": 204,
+        "sequenceVersion": 3
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P11413"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12831846"
+                }
+              ],
+              "value": "Catalyzes the rate-limiting step of the oxidative pentose-phosphate pathway, which represents a route for the dissimilation of carbohydrates besides glycolysis. The main function of this enzyme is to provide reducing power (NADPH) and pentose phosphates for fatty acid and nucleic acid synthesis (PubMed:12831846). Also catalyzes the conversion of NAADPH, which is produced by enzymes such as DUOX1, DUOX2 and NOX5 from NAADP and promotes Ca(2+) signaling during T cell activation, back to NAADP (By similarity)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-glucose 6-phosphate + NADP(+) = 6-phospho-D-glucono-1,5-lactone + NADPH + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:15841"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57783"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57955"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58349"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61548"
+              }
+            ],
+            "ecNumber": "1.1.1.49",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "12831846"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:15842"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "12831846"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "NAADP(+) + D-glucose 6-phosphate = NAADPH + 6-phospho-D-glucono-1,5-lactone + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:86243"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57955"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61548"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:75967"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:235461"
+              }
+            ],
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P11413"
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12831846"
+                }
+              ],
+              "value": "Carbohydrate degradation; pentose phosphate pathway; D-ribulose 5-phosphate from D-glucose 6-phosphate (oxidative stage): step 1/3"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P11413"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "35122041"
+                }
+              ],
+              "value": "Homotetramer; dimer of dimers. Interacts with SIRT2; the interaction is enhanced by H(2)O(2) treatment (By similarity). Forms a ternary complex with ALDOB and TP53; this interaction is direct. ALDOB stabilizes the complex inhibiting G6PD activity and keeping oxidative pentose phosphate metabolism in check"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "subcellularLocations": [
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P11413"
+                  }
+                ],
+                "value": "Cytoplasm, cytosol",
+                "id": "SL-0091"
+              }
+            },
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P11413"
+                  }
+                ],
+                "value": "Membrane",
+                "id": "SL-0162"
+              },
+              "topology": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P11413"
+                  }
+                ],
+                "value": "Peripheral membrane protein",
+                "id": "SL-9903"
+              }
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P11413"
+                }
+              ],
+              "value": "Acetylated by ELP3 at Lys-403; acetylation inhibits its homodimerization and enzyme activity. Deacetylated by SIRT2 at Lys-403; deacetylation stimulates its enzyme activity (By similarity)"
+            }
+          ],
+          "commentType": "PTM"
+        },
+        {
+          "texts": [
+            {
+              "value": "Has NADP both as cofactor (bound to the N-terminal domain) and as structural element bound to the C-terminal domain"
+            }
+          ],
+          "commentType": "MISCELLANEOUS"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the glucose-6-phosphate dehydrogenase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        }
+      ]
+    },
+    {
+      "primaryAccession": "Q93092",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Taldo1"
+          },
+          "synonyms": [
+            {
+              "value": "Tal"
+            },
+            {
+              "value": "Taldo"
+            }
+          ]
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "1997-11-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "1998-07-15",
+        "entryVersion": 198,
+        "sequenceVersion": 2
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "17003133"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "27703206"
+                }
+              ],
+              "value": "Catalyzes the rate-limiting step of the non-oxidative phase in the pentose phosphate pathway. Catalyzes the reversible conversion of sedoheptulose-7-phosphate and D-glyceraldehyde 3-phosphate into erythrose-4-phosphate and beta-D-fructose 6-phosphate (PubMed:17003133, PubMed:27703206). Not only acts as a pentose phosphate pathway enzyme, but also affects other metabolite pathways by altering its subcellular localization between the nucleus and the cytoplasm (PubMed:27703206)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate = D-erythrose 4-phosphate + beta-D-fructose 6-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:17053"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16897"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57483"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57634"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:59776"
+              }
+            ],
+            "ecNumber": "2.2.1.2",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "17003133"
+              },
+              {
+                "evidenceCode": "ECO:0000305",
+                "source": "PubMed",
+                "id": "27703206"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:17054"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "27703206"
+                }
+              ]
+            },
+            {
+              "directionType": "right-to-left",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:17055"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "27703206"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19436114"
+                }
+              ],
+              "value": "Carbohydrate degradation; pentose phosphate pathway; D-glyceraldehyde 3-phosphate and beta-D-fructose 6-phosphate from D-ribose 5-phosphate and D-xylulose 5-phosphate (non-oxidative stage): step 2/3"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "27703206"
+                }
+              ],
+              "value": "Homodimer (PubMed:27703206). Heterodimer with isoform 2 (PubMed:27703206). Interacts with KPNA1 and KPNA4 (PubMed:27703206)"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "molecule": "Isoform 1",
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27703206"
+                  }
+                ],
+                "value": "Shuttles between the nucleus and the cytoplasm. Actively transported into the nucleus in an importin alpha/beta-dependent manner (PubMed:27703206). Exported into the cytoplasm by CRM1 (PubMed:27703206)"
+              }
+            ]
+          },
+          "subcellularLocations": [
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27703206"
+                  }
+                ],
+                "value": "Nucleus",
+                "id": "SL-0191"
+              }
+            },
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27703206"
+                  }
+                ],
+                "value": "Cytoplasm",
+                "id": "SL-0086"
+              }
+            }
+          ]
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "molecule": "Isoform 2",
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27703206"
+                  }
+                ],
+                "value": "Imported into the nucleus when incorporated in isoform 1/isoform 2 homodimer"
+              }
+            ]
+          },
+          "subcellularLocations": [
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "27703206"
+                  }
+                ],
+                "value": "Cytoplasm",
+                "id": "SL-0086"
+              }
+            }
+          ]
+        },
+        {
+          "commentType": "ALTERNATIVE PRODUCTS",
+          "events": [
+            "Alternative initiation"
+          ],
+          "isoforms": [
+            {
+              "name": {
+                "value": "1"
+              },
+              "synonyms": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000303",
+                      "source": "PubMed",
+                      "id": "27703206"
+                    }
+                  ],
+                  "value": "TALDO1L"
+                }
+              ],
+              "isoformIds": [
+                "Q93092-1"
+              ],
+              "isoformSequenceStatus": "Displayed"
+            },
+            {
+              "name": {
+                "value": "2"
+              },
+              "synonyms": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000303",
+                      "source": "PubMed",
+                      "id": "27703206"
+                    }
+                  ],
+                  "value": "TALDO1S"
+                }
+              ],
+              "isoformIds": [
+                "Q93092-2"
+              ],
+              "sequenceIds": [
+                "VSP_061596"
+              ],
+              "isoformSequenceStatus": "Described"
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "27703206"
+                }
+              ],
+              "value": "The first 10 amino acids are essential for nuclear localization"
+            }
+          ],
+          "commentType": "DOMAIN"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "17003133"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19436114"
+                }
+              ],
+              "value": "Deficient mice develop normally; however, males are sterile because of functional and structural defects of mitochondria (PubMed:17003133). Mice spontaneously develop hepatocellular carcinoma. The liver of these mice present an accumulation of five-carbon sugarphosphates and a depletion of NADPH and GSH (PubMed:19436114)"
+            }
+          ],
+          "commentType": "DISRUPTION PHENOTYPE"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the transaldolase family. Type 1 subfamily"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Erroneous initiation",
+          "sequence": "AAB08722.1",
+          "note": "Extended N-terminus.",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryAccession": "Q62371",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Ddr2"
+          },
+          "synonyms": [
+            {
+              "value": "Ntrkr3"
+            },
+            {
+              "value": "Tkt"
+            },
+            {
+              "value": "Tyro10"
+            }
+          ]
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "1997-11-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "1997-11-01",
+        "entryVersion": 215,
+        "sequenceVersion": 2
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11375938"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11723120"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11884411"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15509586"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19681157"
+                }
+              ],
+              "value": "Tyrosine kinase that functions as a cell surface receptor for fibrillar collagen and regulates cell differentiation, remodeling of the extracellular matrix, cell migration and cell proliferation. Required for normal bone development. Regulates osteoblast differentiation and chondrocyte maturation via a signaling pathway that involves MAP kinases and leads to the activation of the transcription factor RUNX2. Regulates remodeling of the extracellular matrix by up-regulation of the collagenases MMP1, MMP2 and MMP13, and thereby facilitates cell migration and tumor cell invasion. Promotes fibroblast migration and proliferation, and thereby contributes to cutaneous wound healing"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "L-tyrosyl-[protein] + ATP = O-phospho-L-tyrosyl-[protein] + ADP + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:10596"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:10136"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:20101"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:46858"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61978"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "2.7.10.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "PROSITE-ProRule",
+                "id": "PRU10028"
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "value": "Present in an inactive state in the absence of collagen binding and phosphorylation by SRC. Tyrosine phosphorylation enhances the affinity for ATP and the catalytic activity"
+            }
+          ],
+          "commentType": "ACTIVITY REGULATION"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11884411"
+                }
+              ],
+              "value": "Binds hydroxyproline-rich sequence motifs in fibrillar, glycosylated collagen, such as the GQOGVMGFO motif, where O stands for hydroxyproline. Interacts with SRC. Interacts (tyrosine phosphorylated) with SHC1"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "subcellularLocations": [
+            {
+              "location": {
+                "value": "Cell membrane",
+                "id": "SL-0039"
+              },
+              "topology": {
+                "value": "Single-pass type I membrane protein",
+                "id": "SL-9905"
+              }
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11375938"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18483174"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19681157"
+                }
+              ],
+              "value": "Widely expressed. Detected in lung, ovary, skin and in testis Leydig cells (at protein level). Widely expressed. Detected at high levels in heart, lung, skeletal muscle, central nervous system (CNS) and kidney, and at lower levels in brain and testis. Detected in chondrocytes in tibia growth plates of young mice"
+            }
+          ],
+          "commentType": "TISSUE SPECIFICITY"
+        },
+        {
+          "texts": [
+            {
+              "value": "Up-regulated during osteoblast differentiation (in vitro). Up-regulated in cartilage from mice with osteoarthritis"
+            }
+          ],
+          "commentType": "INDUCTION"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "value": "N-glycosylated"
+            }
+          ],
+          "commentType": "PTM"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "value": "Tyrosine phosphorylated in response to collagen binding. Phosphorylated by SRC; this is required for activation and subsequent autophosphorylation on additional tyrosine residues (By similarity)"
+            }
+          ],
+          "commentType": "PTM"
+        },
+        {
+          "commentType": "DISEASE",
+          "note": {
+            "texts": [
+              {
+                "value": "Defects in Ddr2 are the cause of the smallie (sli) phenotype. Smallie mice show distinct dwarfing, with reduced body mass and reduced bone mineral content. Mice also have mild craniofacial deformities, such as protuberant eyes and snub noses. Smallie mice have a reduced life span, with about half of them dying within 6 months. Matings between male and female smallie mice do not yield any offspring. The levels of circulating steroid hormones remain at a level corresponding to prepubertal wild-type mice. Adult testes exhibit much reduced numbers of spermatids with atrophy of spermatogonia, Sertoli and Leydig cells. Ovaries show an absence of corpora lutea"
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11375938"
+                }
+              ],
+              "value": "Mice are born at the expected Mendelian rate, but fail to thrive, resulting in much reduced adult body weight and dwarfing. They exhibit shortening of long bones, irregular growth of flat bones and a shortened snout. Young mice show shortened growth plates in long bones and impaired chondrocyte proliferation. Likewise, cultured fibroblasts from mutant mice show reduced proliferation"
+            }
+          ],
+          "commentType": "DISRUPTION PHENOTYPE"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00159"
+                }
+              ],
+              "value": "Belongs to the protein kinase superfamily. Tyr protein kinase family. Insulin receptor subfamily"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "11375938"
+                },
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "19681157"
+                }
+              ],
+              "value": "According to PubMed:18483174 Ddr2 is required for male and female fertility, since smallie mice with a 150 kb deletion that extends into the Ddr2 gene are sterile. Smallie males have defects in spermatogenesis (PubMed:19681157). On the other hand, the fertility status of mice with a targeted disruption of the Ddr2 gene has not been mentioned (PubMed:11375938). Thus, the infertility of smallie mice may be due to some additional, not yet identified defect"
+            }
+          ],
+          "commentType": "CAUTION"
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Erroneous initiation",
+          "sequence": "CAA54040.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryAccession": "P40142",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Tkt"
+          }
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "1995-02-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "1995-02-01",
+        "entryVersion": 193,
+        "sequenceVersion": 1
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "value": "Catalyzes the transfer of a two-carbon ketol group from a ketose donor to an aldose acceptor, via a covalent intermediate with the cofactor thiamine pyrophosphate (By similarity). Thus, catalyzes the reversible transfer of a two-carbon ketol group from sedoheptulose-7-phosphate to glyceraldehyde-3-phosphate, producing xylulose-5-phosphate and ribose-5-phosphate (By similarity). The phosphate group of the substrate plays a role in stabilizing the substrate-thiamine intermediate while preventing the formation of the reactive enamine intermediate (By similarity). Can also use fructose-6-phosphate as a ketose donor (By similarity)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-sedoheptulose 7-phosphate + D-glyceraldehyde 3-phosphate = aldehydo-D-ribose 5-phosphate + D-xylulose 5-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:10508"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57483"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57737"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58273"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:59776"
+              }
+            ],
+            "ecNumber": "2.2.1.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P29401"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            },
+            {
+              "name": "Ca(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:29108"
+              }
+            },
+            {
+              "name": "Mn(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:29035"
+              }
+            },
+            {
+              "name": "Co(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:48828"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P29401"
+                  }
+                ],
+                "value": "Binds 1 Mg(2+) ion per subunit. Can also utilize other divalent metal cations, such as Ca(2+), Mn(2+) and Co(2+)."
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "thiamine diphosphate",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:58937"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P29401"
+                  }
+                ],
+                "value": "Binds 1 thiamine pyrophosphate per subunit."
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Carbohydrate degradation; pentose phosphate pathway"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P29401"
+                }
+              ],
+              "value": "Homodimer"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the transketolase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        }
+      ]
+    },
+    {
+      "primaryAccession": "Q8VEE0",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Rpe"
+          }
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "2003-09-19",
+        "lastAnnotationUpdateDate": "2026-06-10",
+        "lastSequenceUpdateDate": "2002-03-01",
+        "entryVersion": 144,
+        "sequenceVersion": 1
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "value": "Catalyzes the reversible epimerization of D-ribulose 5-phosphate to D-xylulose 5-phosphate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-ribulose 5-phosphate = D-xylulose 5-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:13677"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57737"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58121"
+              }
+            ],
+            "ecNumber": "5.1.3.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "Q96AT9"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Fe(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:29033"
+              }
+            },
+            {
+              "name": "Mn(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:29035"
+              }
+            },
+            {
+              "name": "Zn(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:29105"
+              }
+            },
+            {
+              "name": "Co(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:48828"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "Q96AT9"
+                  }
+                ],
+                "value": "Binds 1 divalent metal cation per subunit. Active with Fe(2+), and probably also with Mn(2+), Zn(2+) and Co(2+)."
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "value": "Carbohydrate degradation"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "Q96AT9"
+                }
+              ],
+              "value": "Homodimer"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the ribulose-phosphate 3-epimerase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Erroneous termination",
+          "sequence": "BAC26287.1",
+          "note": "Extended C-terminus.",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Miscellaneous discrepancy",
+          "sequence": "BAC26287.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryAccession": "Q9DCD0",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Pgd"
+          }
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "2002-05-15",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-01-23",
+        "entryVersion": 183,
+        "sequenceVersion": 3
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P00349"
+                }
+              ],
+              "value": "Catalyzes the oxidative decarboxylation of 6-phosphogluconate to ribulose 5-phosphate and CO(2), with concomitant reduction of NADP to NADPH"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "6-phospho-D-gluconate + NADP(+) = D-ribulose 5-phosphate + CO2 + NADPH",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:10116"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16526"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57783"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58121"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58349"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58759"
+              }
+            ],
+            "ecNumber": "1.1.1.44",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P00349"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:10117"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P00349"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "value": "Carbohydrate degradation; pentose phosphate pathway; D-ribulose 5-phosphate from D-glucose 6-phosphate (oxidative stage): step 3/3"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P00349"
+                }
+              ],
+              "value": "Homodimer"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "subcellularLocations": [
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250",
+                    "source": "UniProtKB",
+                    "id": "P85968"
+                  }
+                ],
+                "value": "Cytoplasm",
+                "id": "SL-0086"
+              }
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the 6-phosphogluconate dehydrogenase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        }
+      ]
+    },
+    {
+      "primaryAccession": "P47968",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Rpia"
+          },
+          "synonyms": [
+            {
+              "value": "Rpi"
+            }
+          ]
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "1996-02-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2007-07-24",
+        "entryVersion": 163,
+        "sequenceVersion": 2
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "aldehydo-D-ribose 5-phosphate = D-ribulose 5-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:14657"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58121"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58273"
+              }
+            ],
+            "ecNumber": "5.3.1.6",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "7758956"
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7758956"
+                }
+              ],
+              "value": "Carbohydrate degradation; pentose phosphate pathway; D-ribose 5-phosphate from D-ribulose 5-phosphate (non-oxidative stage): step 1/1"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7758956"
+                }
+              ],
+              "value": "Widely expressed, with highest levels in testis"
+            }
+          ],
+          "commentType": "TISSUE SPECIFICITY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the ribose 5-phosphate isomerase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Erroneous initiation",
+          "sequence": "AAC42060.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        },
+        {
+          "commentType": "SEQUENCE CAUTION",
+          "sequenceCautionType": "Erroneous initiation",
+          "sequence": "BAE23281.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "primaryAccession": "Q9CQ60",
+      "genes": [
+        {
+          "geneName": {
+            "value": "Pgls"
+          }
+        }
+      ],
+      "entryAudit": {
+        "firstPublicDate": "2004-08-31",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2001-06-01",
+        "entryVersion": 165,
+        "sequenceVersion": 1
+      },
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "value": "Hydrolysis of 6-phosphogluconolactone to 6-phosphogluconate"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "6-phospho-D-glucono-1,5-lactone + H2O = 6-phospho-D-gluconate + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:12556"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15377"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57955"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58759"
+              }
+            ],
+            "ecNumber": "3.1.1.31"
+          }
+        },
+        {
+          "texts": [
+            {
+              "value": "Carbohydrate degradation; pentose phosphate pathway; D-ribulose 5-phosphate from D-glucose 6-phosphate (oxidative stage): step 2/3"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "commentType": "SUBCELLULAR LOCATION",
+          "subcellularLocations": [
+            {
+              "location": {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250"
+                  }
+                ],
+                "value": "Cytoplasm",
+                "id": "SL-0086"
+              }
+            }
+          ]
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the glucosamine/galactosamine-6-phosphate isomerase family. 6-phosphogluconolactonase subfamily"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        }
+      ]
+    }
+  ]
+}
