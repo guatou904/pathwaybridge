@@ -4,7 +4,7 @@
 
 [简体中文](README.zh-CN.md) · [Input contract](docs/input-contract.md) · [Mapping policy](docs/mapping-policy.md)
 
-[**0.1.0a1 exploratory prerelease**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1). Mouse PPP only: seven selected reference reactions, four kinds of upstream result tables. GitHub publication and downloaded-package installation checks are complete. This is not a complete pathway database; independent scientific review and PyPI publication remain pending.
+[**0.1.0a2 exploratory prerelease**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a2). Mouse PPP only: seven selected reference reactions, four kinds of upstream result tables. GitHub publication and downloaded-package installation checks are complete. This is not a complete pathway database; independent scientific review and PyPI publication remain pending.
 
 A gene can move in opposite directions across cell types or spatial regions. A metabolite name can refer to several chemical entities. PathwayBridge keeps those observations separate and makes every candidate mapping inspectable. It reports expression and abundance, **not metabolic flux or a pooled activation score**.
 
@@ -12,18 +12,30 @@ A gene can move in opposite directions across cell types or spatial regions. A m
 
 ## Try it
 
-Requires Python 3.11 or newer. There are no runtime package dependencies and no runtime network calls.
+**[Open the interactive synthetic demo](https://guatou904.github.io/pathwaybridge/)** · [Download the complete demo ZIP](https://guatou904.github.io/pathwaybridge/pathwaybridge-demo.zip)
+
+The hosted report supports search, filters, source inspection and exports. Analyze your own data locally with the CLI below. To read the ZIP offline, extract the whole folder and open `report.html`, keeping the companion files together.
+
+Requires Python 3.11 or newer. Analysis has no runtime package dependencies or network calls; the optional browser viewer connects only to this computer.
 
 ```sh
 python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a1/pathwaybridge-0.1.0a1-py3-none-any.whl"
-pathwaybridge demo --out demo-run
+python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a2/pathwaybridge-0.1.0a2-py3-none-any.whl"
+pathwaybridge demo --out demo-run --open
 ```
 
-Open `demo-run/report/report.html`. The packaged demo contains **synthetic** bulk RNA, single-cell, spatial and metabolite observations, opposing spatial effects, ambiguous redox/isomer features and unsupported IDs. No private research data are bundled.
+The browser opens automatically. Keep the terminal open while viewing; press `Ctrl+C` to stop. To reopen saved results later:
+
+```sh
+pathwaybridge serve --report demo-run/report
+```
+
+The viewer chooses a free local port and prints its URL. That URL works only while the viewer is running. If no browser opens, copy the printed URL. For generation only, omit `--open`; you can also open `demo-run/report/report.html` directly. Reports are preserved when viewing stops.
+
+ The packaged demo contains **synthetic** bulk RNA, single-cell, spatial and metabolite observations, opposing spatial effects, ambiguous redox/isomer features and unsupported IDs. No private research data are bundled.
 
 ## Use your tables
 
@@ -31,7 +43,7 @@ Open `demo-run/report/report.html`. The packaged demo contains **synthetic** bul
 pathwaybridge init --out my-inputs
 # Edit my-inputs/manifest.json to reference your CSV/TSV files.
 pathwaybridge validate --manifest my-inputs/manifest.json
-pathwaybridge build --manifest my-inputs/manifest.json --out my-report
+pathwaybridge build --manifest my-inputs/manifest.json --out my-report --open
 ```
 
 The JSON manifest maps existing column names to the evidence schema and explicitly supplies constants such as species and contrast. Files resolve relative to the manifest. Use NCBI taxon `10090` for mouse. Do not relabel a human table as mouse. A single modality works on its own.
@@ -60,6 +72,8 @@ Existing output directories are refused, never overwritten. Exit `0` means the i
 - Raw P and adjusted P remain separate. No threshold-based significance claim, averaging, cross-modal correlation, enrichment, causal inference or flux estimation is performed.
 
 See [interpretation](docs/interpretation.md) and [mapping policy](docs/mapping-policy.md), including the missing second transketolase reaction and the distinction between formal gene symbols and historical aliases.
+
+See the [0.1.0a2 report-access fix](docs/report-access-fix.md) for the hosted demo, complete ZIP and repeatable local viewer.
 
 ## Development
 

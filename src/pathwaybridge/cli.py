@@ -10,6 +10,7 @@ from pathlib import Path
 from pathwaybridge import __version__
 from pathwaybridge.core import InputError, analyze
 from pathwaybridge.report import write_report
+from pathwaybridge.viewer import serve_report
 
 
 def create_demo(out: Path) -> Path:
@@ -39,6 +40,9 @@ def main(argv=None) -> int:
         cmd.add_argument("--manifest", type=Path, required=True)
         if name == "build":
             cmd.add_argument("--out", type=Path, required=True)
+            cmd.add_argument(
+                "--open", action="store_true", help="Open the report and keep serving it"
+            )
     for name in ("init", "demo"):
         cmd = sub.add_parser(
             name,
@@ -47,8 +51,25 @@ def main(argv=None) -> int:
             else "Run the packaged synthetic four-modality demo",
         )
         cmd.add_argument("--out", type=Path, required=True)
+        if name == "demo":
+            cmd.add_argument(
+                "--open", action="store_true", help="Open the report and keep serving it"
+            )
+    viewer = sub.add_parser("serve", help="Reopen a saved report in your browser")
+    viewer.add_argument(
+        "--report", type=Path, required=True, help="Directory containing report.html"
+    )
+    viewer.add_argument(
+        "--port", type=int, default=0, help="Local port; default chooses a free port"
+    )
+    viewer.add_argument(
+        "--no-open", action="store_true", help="Print the URL without opening a browser"
+    )
     args = parser.parse_args(argv)
     try:
+        if args.command == "serve":
+            serve_report(args.report, port=args.port, open_browser=not args.no_open)
+            return 0
         if args.command == "init":
             manifest = create_demo(args.out)
             print(f"Synthetic template: {manifest}")
@@ -66,6 +87,8 @@ def main(argv=None) -> int:
                 write_report(report, args.out)
                 print(f"Report: {args.out / 'report.html'}")
         print(json.dumps(report["summary"], ensure_ascii=False))
+        if getattr(args, "open", False):
+            serve_report(args.out / "report" if args.command == "demo" else args.out)
         return 0
     except (InputError, OSError, UnicodeError, csv.Error) as exc:
         print(f"pathwaybridge: {exc}", file=sys.stderr)

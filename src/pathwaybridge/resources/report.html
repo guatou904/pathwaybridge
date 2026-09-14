@@ -21,7 +21,7 @@
 <label>Mapping<select id="status"><option value="">All mapping states</option>{status_options}</select></label><button id="reset" type="button">Reset</button></div>
 <div class="table-scroll"><table><thead><tr><th>Entity</th><th>Biological context</th><th>Observed effect</th><th>Statistics</th><th>Mapping / review</th><th>Original source</th></tr></thead>
 <tbody id="ledger">{rows}</tbody></table></div><p id="empty" hidden>No records match these filters.</p></section>
-<section id="provenance"><h2>03 / Provenance & exports</h2><div class="downloads"><a href="evidence.json">Complete JSON</a><a href="evidence.tsv">Evidence TSV</a><a href="reaction_evidence.tsv">Reaction TSV</a><a href="issues.tsv">Review flags</a><a href="mapping.json">Mapping snapshot</a></div>
+<section id="provenance"><h2>03 / Provenance & exports</h2><div class="downloads"><a download href="evidence.json">Complete JSON</a><a download href="evidence.tsv">Evidence TSV</a><a download href="reaction_evidence.tsv">Reaction TSV</a><a download href="issues.tsv">Review flags</a><a download href="mapping.json">Mapping snapshot</a></div>
 <p>Mapping: <code>{mapping_version}</code><small>SHA256: {mapping_sha256}</small></p>
 <ul class="sources">{sources}</ul><p class="fine">Reference annotations adapted from UniProt (CC BY 4.0), with Rhea and ChEBI identifiers. Mapping review is pending independent scientific review. No endorsement by the source databases is implied. JSON preserves original source strings. TSV protects formula-like text with a leading apostrophe.</p>
 <p class="fine">Review the exported report before sharing: it contains your input records and context.</p></section>

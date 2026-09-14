@@ -25,13 +25,14 @@ jobs:
       - run: uv run --no-editable python -m build
       - run: uv run --no-editable twine check dist/*.whl dist/*.tar.gz
       - run: uv run --no-editable python scripts/package_smoke.py --dist dist --out "$RUNNER_TEMP/pathwaybridge-release-smoke"
-      - run: uv run --no-editable pathwaybridge demo --out artifacts/demo
+      - run: uv run --no-editable python scripts/build_demo_site.py --out artifacts/public-demo
       - name: Assemble release evidence
         run: |
           cp "$RUNNER_TEMP/pathwaybridge-release-smoke/results.json" dist/INSTALL_VALIDATION.json
-          cp artifacts/demo/report/report.html dist/demo.html
+          cp artifacts/public-demo/site/report.html dist/demo.html
+          cp artifacts/public-demo/site/pathwaybridge-demo.zip dist/pathwaybridge-demo.zip
           cd dist
-          sha256sum *.whl *.tar.gz INSTALL_VALIDATION.json demo.html > SHA256SUMS
+          sha256sum *.whl *.tar.gz INSTALL_VALIDATION.json demo.html pathwaybridge-demo.zip > SHA256SUMS
       - name: Publish exploratory prerelease
         env:
           GH_TOKEN: ${{ github.token }}

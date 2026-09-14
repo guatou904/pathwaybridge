@@ -7,6 +7,9 @@ import os
 import subprocess
 import sys
 from pathlib import Path
+from queue import Queue
+from threading import Thread
+from urllib.request import ProxyHandler, build_opener
 
 
 def run(command, *, cwd, env):
@@ -19,6 +22,47 @@ def run(command, *, cwd, env):
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
     ).stdout
+
+
+def check_viewer(cli, report_dir, *, cwd, env):
+    process = subprocess.Popen(
+        [str(cli), "serve", "--report", str(report_dir), "--no-open"],
+        cwd=cwd,
+        env=env,
+        text=True,
+        encoding="utf-8",
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+    )
+    lines = Queue()
+
+    def read_startup():
+        lines.put(process.stdout.readline())
+
+    worker = Thread(target=read_startup, daemon=True)
+    worker.start()
+    try:
+        line = lines.get(timeout=20)
+        assert line.startswith("Report URL: http://127.0.0.1:"), line
+        url = line.removeprefix("Report URL: ").strip()
+        opener = build_opener(ProxyHandler({}))
+        names = ["report.html", "SHA256SUMS"] + [
+            line.split(maxsplit=1)[1]
+            for line in (report_dir / "SHA256SUMS").read_text(encoding="utf-8").splitlines()
+        ]
+        for name in sorted(set(names)):
+            with opener.open(url.rsplit("/", 1)[0] + "/" + name, timeout=10) as response:
+                assert response.status == 200
+                assert response.read() == (report_dir / name).read_bytes()
+    finally:
+        process.terminate()
+        try:
+            process.wait(timeout=10)
+        except subprocess.TimeoutExpired:
+            process.kill()
+            process.wait(timeout=10)
+        process.stdout.close()
+        worker.join(timeout=5)
 
 
 def main():
@@ -69,6 +113,9 @@ def main():
         for line in (work / "explicit/SHA256SUMS").read_text(encoding="utf-8").splitlines():
             expected, name = line.split(maxsplit=1)
             assert hashlib.sha256((work / "explicit" / name).read_bytes()).hexdigest() == expected
+        # A stopped viewer must be restartable without rebuilding or overwriting its report.
+        for _ in range(2):
+            check_viewer(cli, work / "explicit", cwd=work, env=env)
         (work / "install.log").write_text(log, encoding="utf-8")
         results.append(
             {
@@ -85,6 +132,8 @@ def main():
                     "validate",
                     "build",
                     "output hashes",
+                    "HTTP report and every export",
+                    "viewer restart without rebuilding",
                 ],
             }
         )

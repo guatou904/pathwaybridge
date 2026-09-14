@@ -4,7 +4,7 @@
 
 [English](README.md) · [输入格式](docs/input-contract.md) · [映射规则](docs/mapping-policy.md)
 
-已发布 [**0.1.0a1 探索测试版**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1)：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。GitHub 发行和下载后的安装回验已完成；完整通路覆盖、独立科学评审和 PyPI 发布尚未完成。
+已发布 [**0.1.0a2 探索测试版**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a2)：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。GitHub 发行和下载后的安装回验已完成；完整通路覆盖、独立科学评审和 PyPI 发布尚未完成。
 
 例如，`Pgd` 在两个空间区域中一升一降，代谢物名称又无法区分异构体。PathwayBridge 会保留这些不同来源的观测，并列出候选映射，不把它们合成一个“通路激活分数”。
 
@@ -12,18 +12,28 @@
 
 ## 先跑一个演示
 
-需要 Python 3.11 或更新版本。运行时不依赖其他 Python 包，也不访问网络。
+**直接体验：[在线交互演示](https://guatou904.github.io/pathwaybridge/)** · [下载完整演示 ZIP](https://guatou904.github.io/pathwaybridge/pathwaybridge-demo.zip)
+
+在线演示使用合成数据，可以搜索、筛选、展开原始记录和下载结果。它是报告示例；分析自己的数据请使用下方的本地工具。ZIP 解压后双击 `report.html`，并保留旁边的导出文件。
+
+需要 Python 3.11 或更新版本。分析过程不依赖其他 Python 包，也不访问网络；浏览器预览只连接本机。
 
 ```sh
 python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a1/pathwaybridge-0.1.0a1-py3-none-any.whl"
-pathwaybridge demo --out demo-run
+python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a2/pathwaybridge-0.1.0a2-py3-none-any.whl"
+pathwaybridge demo --out demo-run --open
 ```
 
-打开 `demo-run/report/report.html`，即可查看通路反应、搜索证据、按模态/映射状态筛选，以及展开原始记录。演示中的数值全部为合成数据，不来自真实研究。
+浏览器会自动打开。查看时请保持终端窗口开启；按 `Ctrl+C` 停止。以后重新打开同一份报告：
+
+```sh
+pathwaybridge serve --report demo-run/report
+```
+
+程序会选择空闲端口，并在终端显示地址。如果浏览器未自动打开，可复制该地址。这个 `127.0.0.1` 地址只在本次查看期间有效；关闭后请重新运行 `serve`。报告文件会一直保留，也可以直接打开 `demo-run/report/report.html`。只生成报告时，省略 `--open`。
 
 ## 导入自己的结果
 
@@ -31,7 +41,7 @@ pathwaybridge demo --out demo-run
 pathwaybridge init --out my-inputs
 # 编辑 my-inputs/manifest.json，填写数据文件、列名与分析背景。
 pathwaybridge validate --manifest my-inputs/manifest.json
-pathwaybridge build --manifest my-inputs/manifest.json --out my-report
+pathwaybridge build --manifest my-inputs/manifest.json --out my-report --open
 ```
 
 输入是上游分析已完成的 CSV/TSV。配置文件将原表列名映射到统一字段，也可以明确填写常量，例如物种 `10090`、比较方向、效应类型和单位。只提供一种模态也可以运行。输出目录必须是新目录；程序不会覆盖或删除旧结果。
@@ -65,6 +75,8 @@ pathwaybridge build --manifest my-inputs/manifest.json --out my-report
 当前参考并非完整 PPP：第二条转酮醇酶反应、其他同工酶、跨膜转运和 PRPP 等分支暂不覆盖。数据库注释中的“同源推断”仍保持该证据等级，不能当作已在小鼠直接实验验证。
 
 ## 当前交付状态
+
+`0.1.0a2` 修复演示入口：新增 `serve` 和 `--open`，发行包提供完整演示 ZIP，在线演示由 GitHub Pages 托管。[本次修复与验证](docs/report-access-fix.md)。
 
 本地功能、测试、合成演示和真实输入格式回验见[验证记录](docs/validation-record.md)。真实研究数据只在本地忽略目录使用，不随软件包分发。真实输入跑通不等于研究结论已通过科学评审。
 
