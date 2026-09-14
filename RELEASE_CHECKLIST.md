@@ -1,6 +1,6 @@
 # Release checklist
 
-Target: exploratory 0.1.0a1, not a validated general pathway inference system.
+Target: exploratory 0.1.0a3, not a validated general pathway inference system.
 
 - [x] Bounded product/input/mapping contracts and explicit non-goals.
 - [x] Local four-modality demo; partial-modality support.
@@ -12,7 +12,8 @@ Target: exploratory 0.1.0a1, not a validated general pathway inference system.
 - [x] Wheel and sdist build, metadata checks and separate clean installations.
 - [x] Final browser QA and artifact contents checked; private inputs excluded.
 - [x] Remote GitHub CI succeeds on the actual release commit (all nine jobs).
-- [x] GitHub v0.1.0a1 prerelease created; downloaded wheel/sdist reinstalled and hashes checked.
+- [x] GitHub v0.1.0a3 prerelease created; downloaded wheel/sdist reinstalled and hashes checked.
+- [x] Hosted synthetic demo verified in Safari; complete ZIP and restartable local viewer delivered.
 - [ ] PyPI project name and distribution configured, if PyPI publication is approved.
 - [ ] Independent human review of 10–20 mappings and two actual user workflows.
 - [ ] Comparative task trial against spreadsheet and pyMultiOmics baseline.

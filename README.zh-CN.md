@@ -80,6 +80,6 @@ pathwaybridge build --manifest my-inputs/manifest.json --out my-report --open
 
 本地功能、测试、合成演示和真实输入格式回验见[验证记录](docs/validation-record.md)。真实研究数据只在本地忽略目录使用，不随软件包分发。真实输入跑通不等于研究结论已通过科学评审。
 
-[远程 CI](https://github.com/guatou904/pathwaybridge/actions/runs/34674597850) 和[发布流程](https://github.com/guatou904/pathwaybridge/actions/runs/34674715592) 均已实际成功：Linux/macOS/Windows × Python 3.11/3.12/3.13，每组 43 项测试通过，并完成 wheel/sdist 安装检查。[发布清单](RELEASE_CHECKLIST.md)。
+[0.1.0a3 发布流程](https://github.com/guatou904/pathwaybridge/actions/runs/34824761130) 已实际成功：Linux/macOS/Windows × Python 3.11/3.12/3.13，每组 48 项测试通过，并验证 wheel/sdist 安装、报告访问和关闭后重新打开。发布文件也已下载回验。[发布清单](RELEASE_CHECKLIST.md)。
 
 代码采用 [MIT](LICENSE)。参考注释来自 UniProt Consortium `2026_03`，沿用 CC BY 4.0，包含其 Rhea/ChEBI 交叉引用；筛选、角色标签和候选别名属于本项目适配。[数据来源与授权](docs/data-sources.md)。

@@ -25,3 +25,12 @@ This fixes report access and delivery. It does not expand the seven-reaction mou
 The 0.1.0a2 release candidate passed 47 unit tests in every matrix job, but all three macOS install checks timed out waiting for the viewer's startup URL. Python's default HTTPServer calls `socket.getfqdn()` while binding; the macOS checks took about 35 seconds instead of the local subsecond run. The loopback viewer now binds without reverse DNS. A regression test makes the resolver unavailable and requires startup to succeed. The failed candidate tag is preserved; no 0.1.0a2 release was published. The corrected release is 0.1.0a3.
 
 The original 490-record local input was rebuilt with the access-fix package. Except for the software version, its complete JSON is identical to the earlier report, including every raw value and source reference. No private input or report is published.
+
+## Completed publication checks
+
+- [0.1.0a3 release workflow](https://github.com/guatou904/pathwaybridge/actions/runs/34824761130): all nine OS/Python jobs pass. Downloaded JUnit reports confirm 48 tests, zero failures and zero skips per job. Each job also installs wheel/sdist, serves every export, and restarts the viewer.
+- [Hosted demo deployment](https://github.com/guatou904/pathwaybridge/actions/runs/34824756733) succeeds. The hosted HTML and complete ZIP return HTTP 200; version and output hashes were checked.
+- Safari on the user's Mac opens the hosted report; Pgd search shows 3 records and Reset restores 20. The final hosted version is 0.1.0a3. The installed report also passed search, spatial/ambiguity filters, empty-state/reset, reaction-to-source navigation, raw-record expansion and an actual TSV download event in the in-app browser.
+- Every release payload was downloaded and matched to SHA256SUMS. The downloaded wheel and sdist each passed a fresh installation, analysis, export delivery and viewer restart outside the checkout. The published wheel also reproduced the complete 490-record private report unchanged except for its software version.
+
+[Machine-readable publication and installation evidence](github-access-fix-validation.json). The old development URL is not a persistent entry point; use the hosted demo or start the saved-report viewer explicitly.

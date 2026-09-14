@@ -1,5 +1,7 @@
 # Validation record — 2026-09-12
 
+Latest: the [2026-09-14 report-access fix](report-access-fix.md) records 0.1.0a3, 48 tests per matrix job, the hosted demo and downloaded-package viewer checks. The record below preserves the original 0.1.0a1 evidence.
+
 Scope: [published exploratory 0.1.0a1](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a1). Local validation, actual remote CI, publication and downloaded-package installation have completed. Independent scientific review and comparative user trials remain pending.
 
 ## Executed checks

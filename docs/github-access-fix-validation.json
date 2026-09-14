@@ -1,0 +1,157 @@
+{
+  "release": "v0.1.0a3",
+  "url": "https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a3",
+  "published_at": "2026-09-14T08:52:21Z",
+  "commit": "494d81cf950b67e73bffbe0566ce3af4cbcfa79d",
+  "release_workflow": "https://github.com/guatou904/pathwaybridge/actions/runs/34824761130",
+  "pages_workflow": "https://github.com/guatou904/pathwaybridge/actions/runs/34824756733",
+  "assets": [
+    {
+      "name": "pathwaybridge-0.1.0a3-py3-none-any.whl",
+      "sha256": "bdfea85aee26b3cf5976a20821d90a7b6e8d874add513339bc94ed10fc045cb8"
+    },
+    {
+      "name": "pathwaybridge-0.1.0a3.tar.gz",
+      "sha256": "3008a6f94a5e077afce4e023729e733f584bda669cbb153fc150181b45f9e3b5"
+    },
+    {
+      "name": "INSTALL_VALIDATION.json",
+      "sha256": "326cee865b2bd3ef7df0c03a1c5472ae4be2465480ce24cc503dbb7df7d14a7c"
+    },
+    {
+      "name": "demo.html",
+      "sha256": "1d01adc0d1c6f9e6a866c21504196878217ce2c4125726f221e06a18b5c039f6"
+    },
+    {
+      "name": "pathwaybridge-demo.zip",
+      "sha256": "3663fbc7d3184f448ac55822051ab6695049a83888e4ab4cfc7bd17a2671afa6"
+    }
+  ],
+  "ci": [
+    {
+      "job": "validation-macos-latest-3.11",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-macos-latest-3.12",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-macos-latest-3.13",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-ubuntu-latest-3.11",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-ubuntu-latest-3.12",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-ubuntu-latest-3.13",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-windows-latest-3.11",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-windows-latest-3.12",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    },
+    {
+      "job": "validation-windows-latest-3.13",
+      "tests": 48,
+      "failures": 0,
+      "skipped": 0,
+      "wheel_and_sdist_http_restart": "passed"
+    }
+  ],
+  "downloaded_zip": "version and all output hashes verified",
+  "browser": {
+    "Safari": "Hosted report opened; Pgd search returned 3 records; reset returned 20; final 0.1.0a3 page verified; section and return-to-top navigation verified on 0.1.0a3",
+    "local_installed_report": "Search, spatial and ambiguity filters, empty state, reset, reaction-to-source navigation, raw records and TSV download verified"
+  },
+  "local_real_input": {
+    "records": 490,
+    "result": "Complete report JSON unchanged except software version"
+  },
+  "post_download_install": [
+    {
+      "artifact": "pathwaybridge-0.1.0a3-py3-none-any.whl",
+      "sha256": "bdfea85aee26b3cf5976a20821d90a7b6e8d874add513339bc94ed10fc045cb8",
+      "status": "passed",
+      "python": "3.12.14",
+      "records": 20,
+      "checks": [
+        "fresh environment",
+        "pip check",
+        "CLI version",
+        "demo",
+        "validate",
+        "build",
+        "output hashes",
+        "HTTP report and every export",
+        "viewer restart without rebuilding"
+      ]
+    },
+    {
+      "artifact": "pathwaybridge-0.1.0a3.tar.gz",
+      "sha256": "3008a6f94a5e077afce4e023729e733f584bda669cbb153fc150181b45f9e3b5",
+      "status": "passed",
+      "python": "3.12.14",
+      "records": 20,
+      "checks": [
+        "fresh environment",
+        "pip check",
+        "CLI version",
+        "demo",
+        "validate",
+        "build",
+        "output hashes",
+        "HTTP report and every export",
+        "viewer restart without rebuilding"
+      ]
+    }
+  ],
+  "hosted_delivery": {
+    "http_status": 200,
+    "files": [
+      "SHA256SUMS",
+      "evidence.json",
+      "evidence.tsv",
+      "issues.tsv",
+      "mapping.json",
+      "pathway.svg",
+      "reaction_evidence.tsv",
+      "report.html",
+      "pathwaybridge-demo.zip"
+    ],
+    "result": "Every report asset and ZIP member matches the published 0.1.0a3 demo"
+  }
+}
