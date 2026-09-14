@@ -30,7 +30,7 @@ function revealTarget() {
     search.value = modality.value = statusFilter.value = "";
     update();
   }
-  target.scrollIntoView({block: "center"});
+  target.scrollIntoView({block: ["MAIN", "SECTION"].includes(target.tagName) ? "start" : "center"});
 }
 window.addEventListener("hashchange", revealTarget);
 revealTarget();

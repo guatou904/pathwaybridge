@@ -3,6 +3,7 @@
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from socketserver import TCPServer
 from urllib.parse import urlsplit
 
 from pathwaybridge.core import InputError
@@ -17,6 +18,14 @@ REPORT_FILES = {
     "pathway.svg": "image/svg+xml",
     "SHA256SUMS": "text/plain; charset=utf-8",
 }
+
+
+class LocalReportServer(ThreadingHTTPServer):
+    def server_bind(self):
+        # HTTPServer normally reverse-resolves its address. A loopback viewer needs no
+        # DNS, and that lookup can block startup on Macs with an unavailable resolver.
+        TCPServer.server_bind(self)
+        self.server_name, self.server_port = self.server_address[:2]
 
 
 def report_server(report_dir: Path, port: int = 0) -> ThreadingHTTPServer:
@@ -68,7 +77,7 @@ def report_server(report_dir: Path, port: int = 0) -> ThreadingHTTPServer:
         def log_message(self, format, *args):
             pass
 
-    return ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    return LocalReportServer(("127.0.0.1", port), Handler)
 
 
 def serve_report(report_dir: Path, *, port: int = 0, open_browser: bool = True) -> None:

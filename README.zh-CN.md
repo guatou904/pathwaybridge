@@ -4,7 +4,7 @@
 
 [English](README.md) · [输入格式](docs/input-contract.md) · [映射规则](docs/mapping-policy.md)
 
-已发布 [**0.1.0a2 探索测试版**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a2)：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。GitHub 发行和下载后的安装回验已完成；完整通路覆盖、独立科学评审和 PyPI 发布尚未完成。
+已发布 [**0.1.0a3 探索测试版**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a3)：支持小鼠 PPP 的 7 条精选反应，以及 bulk RNA、单细胞、空间和代谢物结果表。GitHub 发行和下载后的安装回验已完成；完整通路覆盖、独立科学评审和 PyPI 发布尚未完成。
 
 例如，`Pgd` 在两个空间区域中一升一降，代谢物名称又无法区分异构体。PathwayBridge 会保留这些不同来源的观测，并列出候选映射，不把它们合成一个“通路激活分数”。
 
@@ -23,7 +23,7 @@ python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a2/pathwaybridge-0.1.0a2-py3-none-any.whl"
+python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a3/pathwaybridge-0.1.0a3-py3-none-any.whl"
 pathwaybridge demo --out demo-run --open
 ```
 
@@ -76,7 +76,7 @@ pathwaybridge build --manifest my-inputs/manifest.json --out my-report --open
 
 ## 当前交付状态
 
-`0.1.0a2` 修复演示入口：新增 `serve` 和 `--open`，发行包提供完整演示 ZIP，在线演示由 GitHub Pages 托管。[本次修复与验证](docs/report-access-fix.md)。
+`0.1.0a3` 修复演示入口：新增 `serve` 和 `--open`，发行包提供完整演示 ZIP，在线演示由 GitHub Pages 托管。[本次修复与验证](docs/report-access-fix.md)。
 
 本地功能、测试、合成演示和真实输入格式回验见[验证记录](docs/validation-record.md)。真实研究数据只在本地忽略目录使用，不随软件包分发。真实输入跑通不等于研究结论已通过科学评审。
 

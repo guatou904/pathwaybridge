@@ -4,7 +4,7 @@ title: "PathwayBridge: context-preserving multi-omics reaction evidence"
 type: software
 authors:
   - name: "PathwayBridge contributors"
-version: 0.1.0a2
+version: 0.1.0a3
 license: MIT
 abstract: "Offline, row-traceable evidence mapping for a bounded mouse pentose phosphate pathway reference."
 repository-code: "https://github.com/guatou904/pathwaybridge"

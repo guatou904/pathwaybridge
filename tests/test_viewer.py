@@ -69,6 +69,16 @@ def test_cli_reports_missing_report_and_invalid_port(tmp_path, report_dir, capsy
     assert "Port must be" in capsys.readouterr().err
 
 
+def test_local_viewer_starts_without_reverse_dns(report_dir, monkeypatch):
+    def no_resolver(*args):
+        raise AssertionError("Local report startup must not depend on DNS")
+
+    monkeypatch.setattr("socket.getfqdn", no_resolver)
+    with report_server(report_dir) as server:
+        assert server.server_name == "127.0.0.1"
+        assert server.server_port > 0
+
+
 def test_browser_failure_keeps_a_printed_url_and_stop_preserves_report(
     report_dir, monkeypatch, capsys
 ):

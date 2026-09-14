@@ -4,7 +4,7 @@
 
 [简体中文](README.zh-CN.md) · [Input contract](docs/input-contract.md) · [Mapping policy](docs/mapping-policy.md)
 
-[**0.1.0a2 exploratory prerelease**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a2). Mouse PPP only: seven selected reference reactions, four kinds of upstream result tables. GitHub publication and downloaded-package installation checks are complete. This is not a complete pathway database; independent scientific review and PyPI publication remain pending.
+[**0.1.0a3 exploratory prerelease**](https://github.com/guatou904/pathwaybridge/releases/tag/v0.1.0a3). Mouse PPP only: seven selected reference reactions, four kinds of upstream result tables. GitHub publication and downloaded-package installation checks are complete. This is not a complete pathway database; independent scientific review and PyPI publication remain pending.
 
 A gene can move in opposite directions across cell types or spatial regions. A metabolite name can refer to several chemical entities. PathwayBridge keeps those observations separate and makes every candidate mapping inspectable. It reports expression and abundance, **not metabolic flux or a pooled activation score**.
 
@@ -23,7 +23,7 @@ python -m venv .venv
 # macOS / Linux
 source .venv/bin/activate
 # Windows PowerShell: .venv\Scripts\Activate.ps1
-python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a2/pathwaybridge-0.1.0a2-py3-none-any.whl"
+python -m pip install "https://github.com/guatou904/pathwaybridge/releases/download/v0.1.0a3/pathwaybridge-0.1.0a3-py3-none-any.whl"
 pathwaybridge demo --out demo-run --open
 ```
 
@@ -73,7 +73,7 @@ Existing output directories are refused, never overwritten. Exit `0` means the i
 
 See [interpretation](docs/interpretation.md) and [mapping policy](docs/mapping-policy.md), including the missing second transketolase reaction and the distinction between formal gene symbols and historical aliases.
 
-See the [0.1.0a2 report-access fix](docs/report-access-fix.md) for the hosted demo, complete ZIP and repeatable local viewer.
+See the [0.1.0a3 report-access fix](docs/report-access-fix.md) for the hosted demo, complete ZIP and repeatable local viewer.
 
 ## Development
 
